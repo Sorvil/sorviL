@@ -1,0 +1,109 @@
+.todo-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 32px 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.todo-list-container h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #0f172a;
+    text-align: center;
+}
+
+.todo-list-container input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.todo-list-container input:focus {
+    border-color: #5c92da;
+}
+
+.todo-list-container > button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1562c7;
+    background: #b4d1f3;
+    color: #1e293b;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.todo-list-container > button:hover {
+    background: #a3c1ee;
+}
+
+.todo-list-container > button:active {
+    background: #8db3eb;
+}
+
+.todo-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list-container li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.todo-list-container li span {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+.todo-list-container li input[type="checkbox"] {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.todo-list-container li button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #d14040;
+    background: #fef2f2;
+    color: #d14040;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.todo-list-container li button:hover {
+    background: #f3d2d2;
+}
+
+.todo-list-container li button:last-child {
+    border: 1px solid #afafaf;
+    color: #363636;
+    background: #e0e0e0;
+}
+
+.todo-list-container li button:last-child:hover {
+    background: #cfcfcf;
+}
+
+.todo-list-container li input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
