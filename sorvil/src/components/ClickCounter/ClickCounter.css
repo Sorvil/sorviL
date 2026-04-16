@@ -1,0 +1,57 @@
+.click-counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 32px 20px;
+    max-width: 420px;
+    margin: 40px auto;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+.click-counter-container h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #0f172a;
+}
+
+.click-counter-container p {
+    font-size: 1rem;
+    color: #475569;
+}
+
+.click-counter-container span {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.click-counter-container button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1562c7;
+    background:  #b4d1f3;
+    color: #1e293b;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.click-counter-container button:hover {
+    background: #a3c1ee;
+}
+
+.click-counter-container button:active {
+    background: #8db3eb;
+}
+
+.click-counter-container button:nth-of-type(2) {
+    background: #f7fbff;
+    border: 1px solid #5c92da;
+}
+
+.click-counter-container button:nth-of-type(2):hover {
+    background: #e0e5e9;
+}
