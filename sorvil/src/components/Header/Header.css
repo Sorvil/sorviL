@@ -1,0 +1,92 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(120deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    padding: 28px 16px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    flex-wrap: wrap;
+}
+
+nav button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    color: #0f172a;
+    transition: all 0.25s ease;
+}
+
+nav button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #224ec7, #1649d4);
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+}
+
+nav button:hover {
+    color: #141fbe;
+}
+
+nav button:hover::after {
+    width: 60%;
+}
+
+nav button.active {
+    color: #1e40af;
+}
+
+nav button.active::after {
+    width: 60%;
+    background: linear-gradient(90deg, #224ec7, #1649d4);
+}
+
+nav button:active {
+    transform: scale(0.96);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav button {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav button {
+        flex: 1 1 100%;
+    }
+}
