@@ -57,7 +57,8 @@
 .todo-list-container li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
     padding: 10px;
     border-radius: 8px;
     background: #f8fafc;
@@ -103,7 +104,20 @@
 
 .todo-list-container li input[type="text"] {
     flex: 1;
+    min-width: 0;
     padding: 6px;
     border-radius: 6px;
     border: 1px solid #cbd5e1;
+}
+
+@media (max-width: 480px) {
+    .todo-list-container {
+        margin: 20px auto;
+        padding: 24px 16px;
+    }
+
+    .todo-list-container li input[type="text"] {
+        flex-basis: 100%;
+        order: -1;
+    }
 }
